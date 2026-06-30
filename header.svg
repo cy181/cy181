@@ -1,0 +1,230 @@
+<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+
+    <!-- Animated Neon Gradient -->
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%">
+      <animate attributeName="x1"
+               values="-100%;100%;-100%"
+               dur="8s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="x2"
+               values="0%;200%;0%"
+               dur="8s"
+               repeatCount="indefinite"/>
+
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#4F8CFF"/>
+      <stop offset="100%" stop-color="#D946EF"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur">
+        <animate attributeName="stdDeviation"
+                 values="4;8;4"
+                 dur="2.5s"
+                 repeatCount="indefinite"/>
+      </feGaussianBlur>
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Small Glow -->
+    <filter id="smallGlow">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="220" rx="18" fill="url(#bg)"/>
+
+  <!-- Top Line -->
+  <g>
+
+    <line
+        x1="80"
+        y1="50"
+        x2="1120"
+        y2="50"
+        stroke="url(#neon)"
+        stroke-width="4"
+        stroke-linecap="round"
+        filter="url(#glow)"/>
+
+    <circle r="5" fill="white" filter="url(#glow)">
+      <animate attributeName="cx"
+               values="80;1120;80"
+               dur="4s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="cy"
+               values="50;50;50"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+  <!-- Bottom Line -->
+  <g>
+
+    <line
+        x1="80"
+        y1="170"
+        x2="1120"
+        y2="170"
+        stroke="url(#neon)"
+        stroke-width="4"
+        stroke-linecap="round"
+        filter="url(#glow)"/>
+
+    <circle r="5" fill="white" filter="url(#glow)">
+      <animate attributeName="cx"
+               values="1120;80;1120"
+               dur="4s"
+               repeatCount="indefinite"/>
+
+      <animate attributeName="cy"
+               values="170;170;170"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+  <!-- Decorative Dashes -->
+  <g stroke="#6EE7FF"
+     stroke-width="6"
+     stroke-linecap="round"
+     filter="url(#smallGlow)"
+     opacity=".9">
+
+      <line x1="40" y1="50" x2="55" y2="50"/>
+      <line x1="60" y1="50" x2="75" y2="50"/>
+
+      <line x1="1145" y1="50" x2="1160" y2="50"/>
+      <line x1="1168" y1="50" x2="1183" y2="50"/>
+
+      <line x1="40" y1="170" x2="55" y2="170"/>
+      <line x1="60" y1="170" x2="75" y2="170"/>
+
+      <line x1="1145" y1="170" x2="1160" y2="170"/>
+      <line x1="1168" y1="170" x2="1183" y2="170"/>
+
+  </g>
+
+  <!-- Left Arrows -->
+  <g
+      fill="none"
+      stroke="#3B82F6"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#smallGlow)">
+
+      <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="-3 0;3 0;-3 0"
+          dur="1.8s"
+          repeatCount="indefinite"/>
+
+      <polyline points="95,110 80,95 95,80"/>
+      <polyline points="120,110 105,95 120,80"/>
+      <polyline points="145,110 130,95 145,80"/>
+
+  </g>
+
+  <!-- Right Arrows -->
+  <g
+      fill="none"
+      stroke="#D946EF"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#smallGlow)">
+
+      <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="3 0;-3 0;3 0"
+          dur="1.8s"
+          repeatCount="indefinite"/>
+
+      <polyline points="1105,80 1120,95 1105,110"/>
+      <polyline points="1080,80 1095,95 1080,110"/>
+      <polyline points="1055,80 1070,95 1055,110"/>
+
+  </g>
+
+  <!-- Title -->
+  <text
+      x="600"
+      y="122"
+      text-anchor="middle"
+      font-family="Segoe UI, Inter, Arial"
+      font-size="72"
+      font-weight="700"
+      fill="url(#neon)"
+      filter="url(#glow)"
+      letter-spacing="2">
+
+      <animate
+          attributeName="opacity"
+          values="0.85;1;0.85"
+          dur="2s"
+          repeatCount="indefinite"/>
+
+      MY PROJECTS
+
+  </text>
+
+  <!-- Floating Particles -->
+  <g fill="#67E8F9">
+
+      <circle cx="55" cy="95" r="2">
+          <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="1;2.5;1" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="95;88;95" dur="3s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="70" cy="135" r="1.5">
+          <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="135;128;135" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="1135" cy="90" r="2">
+          <animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="90;82;90" dur="3s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="1155" cy="140" r="1.5">
+          <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="140;132;140" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="1080" cy="65" r="1.8">
+          <animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="65;58;65" dur="3.4s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="120" cy="155" r="1.8">
+          <animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/>
+          <animate attributeName="cy" values="155;147;155" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+
+  </g>
+
+</svg>
