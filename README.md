@@ -1,7 +1,5 @@
 <div style="width: 100%;">
-  <a href="https://myztyn.itch.io/chrono-deception">
-    <img src="header.svg" style="width: 100%;" alt="Click to see the source">
-  </a>
+  <img src="header.svg" style="width: 100%;" alt="Click to see the source">
 </div>
 
 <div style="width: 100%;">
