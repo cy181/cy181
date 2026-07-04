@@ -28,7 +28,34 @@
 </style>
 
 <!-- Background -->
-<rect width="900" height="520" rx="18" fill="#0d1117"/>
+<defs>
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#58a6ff"/>
+        <stop offset="35%" stop-color="#a371f7"/>
+        <stop offset="70%" stop-color="#f85149"/>
+        <stop offset="100%" stop-color="#3fb950"/>
+    </linearGradient>
+</defs>
+
+<!-- Outer Border -->
+<rect
+    x="3"
+    y="3"
+    width="894"
+    height="514"
+    rx="18"
+    fill="url(#borderGradient)"
+/>
+
+<!-- Main Card -->
+<rect
+    x="5"
+    y="5"
+    width="890"
+    height="510"
+    rx="16"
+    fill="#0d1117"
+/>
 
 <!-- Header -->
 
@@ -76,12 +103,16 @@ Programming Languages
 <rect x="205" y="215" width="70" height="34" rx="17" fill="#00599C"/>
 <text x="240" y="237" text-anchor="middle" class="badgeText">C++</text>
 
-<rect x="285" y="215" width="75" height="34" rx="17" fill="#E76F00"/>
-<text x="322" y="237" text-anchor="middle" class="badgeText">Java</text>
+<rect x="285" y="215" width="70" height="34" rx="17" fill="#68217A"/>
+<text x="320" y="237" text-anchor="middle" class="badgeText">C#</text>
 
-<rect x="370" y="215" width="120" height="34" rx="17" fill="#F7DF1E"/>
+<rect x="365" y="215" width="75" height="34" rx="17" fill="#E76F00"/>
+<text x="402" y="237" text-anchor="middle" class="badgeText">Java</text>
+
+<!-- JavaScript -->
+<rect x="450" y="215" width="120" height="34" rx="17" fill="#F7DF1E"/>
 <text
-    x="430"
+    x="510"
     y="237"
     text-anchor="middle"
     font-family="sans-serif"
@@ -90,6 +121,10 @@ Programming Languages
     fill="#111827">
 JavaScript
 </text>
+
+<!-- PHP -->
+<rect x="580" y="215" width="70" height="34" rx="17" fill="#777BB4"/>
+<text x="615" y="237" text-anchor="middle" class="badgeText">PHP</text>
 
 <!-- Web -->
 
@@ -105,6 +140,12 @@ Web Development
 
 <rect x="205" y="305" width="105" height="34" rx="17" fill="#7952B3"/>
 <text x="257" y="327" text-anchor="middle" class="badgeText">Bootstrap</text>
+
+<rect x="320" y="305" width="90" height="34" rx="17" fill="#FF2D20"/>
+<text x="365" y="327" text-anchor="middle" class="badgeText">Laravel</text>
+
+<rect x="420" y="305" width="75" height="34" rx="17" fill="#F05340"/>
+<text x="458" y="327" text-anchor="middle" class="badgeText">Blade</text>
 
 <!-- Tools -->
 
