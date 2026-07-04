@@ -1,0 +1,146 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+.title{
+    font:700 30px sans-serif;
+    fill:#f8fafc;
+}
+
+.subtitle{
+    font:600 22px sans-serif;
+    fill:#e2e8f0;
+}
+
+.body{
+    font:16px sans-serif;
+    fill:#94a3b8;
+}
+
+.label{
+    font:600 17px sans-serif;
+    fill:#cbd5e1;
+}
+
+.badgeText{
+    font:600 14px sans-serif;
+    fill:white;
+}
+</style>
+
+<!-- Background -->
+<rect width="900" height="520" rx="18" fill="#0d1117"/>
+
+<!-- Header -->
+
+<text x="40" y="55" class="title">
+About Me
+</text>
+
+<text class="body">
+    <tspan x="40" y="90">
+        Computer Science student passionate about game development,
+    </tspan>
+    <tspan x="40" dy="22">
+        web development and building clean user interfaces.
+    </tspan>
+</text>
+
+<!-- Divider -->
+
+<line
+    x1="40"
+    y1="130"
+    x2="860"
+    y2="130"
+    stroke="#30363d"
+    stroke-width="1"/>
+
+<!-- ===================== -->
+
+<text x="40" y="165" class="subtitle">
+Tech Stack
+</text>
+
+<!-- Languages -->
+
+<text x="40" y="200" class="label">
+Programming Languages
+</text>
+
+<rect x="40" y="215" width="90" height="34" rx="17" fill="#3776AB"/>
+<text x="85" y="237" text-anchor="middle" class="badgeText">Python</text>
+
+<rect x="140" y="215" width="55" height="34" rx="17" fill="#5C6BC0"/>
+<text x="168" y="237" text-anchor="middle" class="badgeText">C</text>
+
+<rect x="205" y="215" width="70" height="34" rx="17" fill="#00599C"/>
+<text x="240" y="237" text-anchor="middle" class="badgeText">C++</text>
+
+<rect x="285" y="215" width="75" height="34" rx="17" fill="#E76F00"/>
+<text x="322" y="237" text-anchor="middle" class="badgeText">Java</text>
+
+<rect x="370" y="215" width="120" height="34" rx="17" fill="#F7DF1E"/>
+<text
+    x="430"
+    y="237"
+    text-anchor="middle"
+    font-family="sans-serif"
+    font-size="14"
+    font-weight="600"
+    fill="#111827">
+JavaScript
+</text>
+
+<!-- Web -->
+
+<text x="40" y="290" class="label">
+Web Development
+</text>
+
+<rect x="40" y="305" width="75" height="34" rx="17" fill="#E34F26"/>
+<text x="78" y="327" text-anchor="middle" class="badgeText">HTML</text>
+
+<rect x="125" y="305" width="70" height="34" rx="17" fill="#1572B6"/>
+<text x="160" y="327" text-anchor="middle" class="badgeText">CSS</text>
+
+<rect x="205" y="305" width="105" height="34" rx="17" fill="#7952B3"/>
+<text x="257" y="327" text-anchor="middle" class="badgeText">Bootstrap</text>
+
+<!-- Tools -->
+
+<text x="40" y="380" class="label">
+Tools
+</text>
+
+<rect x="40" y="395" width="60" height="34" rx="17" fill="#F05032"/>
+<text x="70" y="417" text-anchor="middle" class="badgeText">Git</text>
+
+<rect x="110" y="395" width="90" height="34" rx="17" fill="#24292F"/>
+<text x="155" y="417" text-anchor="middle" class="badgeText">GitHub</text>
+
+<rect x="210" y="395" width="130" height="34" rx="17" fill="#5C2D91"/>
+<text x="275" y="417" text-anchor="middle" class="badgeText">Visual Studio</text>
+
+<rect x="350" y="395" width="120" height="34" rx="17" fill="#007ACC"/>
+<text x="410" y="417" text-anchor="middle" class="badgeText">VS Code</text>
+
+<!-- Divider -->
+
+<line
+    x1="40"
+    y1="465"
+    x2="860"
+    y2="465"
+    stroke="#30363d"
+    stroke-width="1"/>
+
+<text
+    x="40"
+    y="495"
+    font-family="sans-serif"
+    font-size="14"
+    fill="#6e7681">
+Always learning • Always building
+</text>
+
+</svg>
